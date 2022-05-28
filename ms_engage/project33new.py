@@ -482,13 +482,13 @@ quantity3=0
 tickers=list(df2['symbol'])
 orders=[]
 
-for ticker in tickers:
-    try:
+# for ticker in tickers:
+#     try:
 
-        client.futures_change_margin_type(symbol=str(ticker), marginType='ISOLATED')
-        client.futures_change_leverage(symbol=str(ticker),leverage=int(df2['binance_X'][0]))
-    except Exception as e:
-        print(str(e))
+#         client.futures_change_margin_type(symbol=str(ticker), marginType='ISOLATED')
+#         client.futures_change_leverage(symbol=str(ticker),leverage=int(df2['binance_X'][0]))
+#     except Exception as e:
+#         print(str(e))
 short_for_candle=0
 info = client.futures_exchange_info()
 
