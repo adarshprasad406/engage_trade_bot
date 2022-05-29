@@ -12,12 +12,9 @@ from indicator import indicators
 
 # local file
 import secrets
-import json
-import yfinance as yf
 import numpy as np
 import datetime as dt
-import requests 
-import json 
+import requests  
 import pandas as pd 
 import numpy as np  
 import requests
